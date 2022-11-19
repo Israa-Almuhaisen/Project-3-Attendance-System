@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b56885f075.js" crossorigin="anonymous"></script>
+    <title>User Profile</title>
+<style>
+   /* *{
+    margin: 0%;
+    padding: 0%;
+} */
+
+
+#header {
+    background-color:#272D4A;
+    border-bottom:1px black solid ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12,1fr);
+}
+
+
+.nav-link{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.nav-link2{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+
+.img_logo{
+   width:85px ;
+   height: 60px;
+   grid-row: 2/3;
+   padding-left: 49px;
+}
+
+.HOME{
+    grid-row: 4/5    ;
+}
+
+.User_Page{
+    grid-row: 5/6    ;
+}
+
+.STUDENT{
+    grid-row: 6/7    ;
+}
+
+.Email{
+    grid-row: 7/8    ;
+}
+
+.icon_facebook_linkedin{
+    grid-row: 11/12    ;
+    font-size: 25px;
+    text-align: center;
+}
+
+#icon_header{
+    padding-right: 20px;
+}
+
+.nav_paragraf{
+    color: white;
+    font-size:14px;
+}
+    /* ______________________________________________________________ */
+
+    body{
+        background-color: #e3e9f5;
+    }
+   .pageFlex{
+        margin-left:240px;
+        margin-top: 4%;
+        padding:0%;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #494c4c;
+        box-sizing: border-box;
+        top: 50%;
+        left: 50%;
+        height:82vh ;
+        width:70%;
+        display: flex;
+        box-shadow: 0px 5px 10px -3px  #c3cfe9;
+
+       
+    }
+    .leftSide{
+        width: 25%;
+        background:#f2f3f3cb;
+        text-align: center;
+        border-radius:5px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .imgcss{
+        border-radius: 40%;
+        margin-bottom: 6px;
+        width:73% ;
+        height:70%;
+    }
+    .leftSide h3{
+        margin-bottom: 15px;
+    }
+
+    .rightSide{
+        width: 80%;
+        background-color: white;
+        border-radius:5px;
+        padding-left: 40px;
+        padding-top: 50px;
+    }
+    .rightSide p{
+        font-size: 1em;
+    }
+    .info{
+        margin-bottom: 8vh;
+    }
+  
+    .infoFlex{
+        display: flex;
+        justify-content:space-between;
+        width: 60% ;
+
+    }
+ .infoFlex h3 {
+    text-transform: capitalize;
+    text-shadow:1px 0px 1px #555757;
+    font-size: 1.2em;
+ }
+  
+    .Data{
+        width: 45%; 
+    }
+    
+  
+    .pageFlex h2{
+        text-transform: uppercase;
+        font-size: 1.4em;
+    }
+    /* .socialMedia{
+    } */
+
+    .socialMedia ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+       padding-left: 2%;
+    }
+    ul li{
+        width:50px;
+        height:50px;
+        background-color:#272D4A;
+        line-height: 44px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    ul li a{
+        color: white;
+        font-size: 23px;
+        display: block;
+        
+    }
+    .bioDiv{
+        padding-right: 25px;
+    }
+   
+
+    @media screen and (max-width: 950px) {
+        .infoFlex{ flex-direction: column;}
+        .socialMedia ul{flex-direction: column; align-items: center;}
+        .pageFlex h2{font-size: 1.1em;}
+        .infoFlex h3 {font-size: .9em;}
+}
+
+
+
+</style>
+</head>
+<body>
+    <header id="header">
+        
+        <img src="./photo/SMART_ACADEMY__1_-removebg-preview.png " alt="logo" class="img_logo">
+
+        <a href="#" class="nav-link HOME"><i class="fa-solid fa-house" id="icon_header"></i><span>HOME</span></a>
+        <a href="#" class="nav-link User_Page"><i class="fa-solid fa-user" id="icon_header"></i><span>User Page</span></a>
+        <a href="#" class="nav-link STUDENT"><i class="fa-solid fa-table" id="icon_header"></i><span>STUDENT</span></a>      
+        <a href="#" class="nav-link Email"><i class="fa-solid fa-envelope" id="icon_header"></i><span>Email</span></a>    
+        
+        <div class="icon_facebook_linkedin">
+             
+             <a href="#" class="nav-link2 facebook"><i class="fa-brands fa-facebook" id="icon_header"></i></a>
+             <a href="#" class="nav-link2 linkedin"><i class="fa-brands fa-linkedin" id="icon_header"></i></a>
+             <br><br>
+
+            <p class="nav_paragraf">Copyright ©2022 by Smart System</p>
+        </div> 
+    </header>
+    <!-- _____________________________________________________ -->
+
+    <div class="pageFlex">
+        <div class="leftSide">
+            <div>
+                <img class="imgcss" src="./photo/girl.png" alt="user photo">
+                <h2>lorem ipsum</h2>
+             </div>
+             <div class="socialMedia">
+               <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github "></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in "></i></a></li>
+               </ul>
+             </div>
+        </div>
+
+        <div class=rightSide>
+            <div class="info">
+                <h2>Information</h2>
+                <div class="infoFlex">
+                    <div class="data">
+                        <h3>Email</h3>
+                        <p>Lorem.ipsum@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <h3>Phone</h3>
+                        <p>+962 1234567</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="bioDiv">
+                <h2>Bio</h2>
+                <p class="">Lorem ipsum dolor sit amet,  Atque alias consequuntur animi harum pariatur qui, voluptatibus et suscipit sit odit.</p>
+            </div>
+
+        </div>
+
+    </div> 
+</body>
+</html>
